@@ -1,0 +1,332 @@
+/*=-=-=-==-=-=-GOOGLE FONTS=-=-=-=-*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@700&display=swap');
+
+/*
+*/
+
+/*=-=-=-==-=-=-COMMON CSS=-=-=-=-*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+a:hover{
+	text-decoration: none;
+}
+.col-10{
+	position: static;
+}
+/*=-=-=-==-=-=-HEADER CSS=-=-=-=-*/
+.strict-header{
+	background: #f6f9f9;
+	padding: 30px 0;
+}
+.strict-logo{}
+.strict-menu{}
+.strict-menu ul{
+	list-style: none;
+	display: flex;
+	float: right;
+}
+.strict-menu ul li{}
+.strict-menu ul li a{
+	text-transform: capitalize;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 20px;
+	display: block;
+	color: #454444;
+	transition: .5s;
+
+}
+.strict-menu ul li a:hover{
+	color: #15a4fa;
+}
+.menu-bar{
+	float: right;
+	display: none;
+}
+.menu-bar i{
+	font-size: 30px;
+	color: #000;
+}
+/*=-=-=-==-=-=-BANNER CSS=-=-=-=-*/
+.strict-banner{
+	background-image: url('images/banner-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 120px 0 85px;
+}
+.strict-banner-text{}
+.strict-banner-text h1{
+	text-transform: uppercase;
+	font-size: 75px;
+	font-weight: 700;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.strict-banner-text span{
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	border-top: 1px solid #15a4fa;
+	padding: 30px 20px;
+	display: inline-block;
+}
+.strict-banner-button{
+	margin-top: 60px;
+}
+.strict-banner-button a{
+	text-transform: capitalize;
+	color: #ffffff;
+	border: 1px solid #15a4fa;
+	padding: 15px 25px;
+	border-radius: 3px;
+	transition: .5s;
+}
+.strict-banner-button a:hover{
+	background: #15a4fa;
+}
+.strict-banner-button i{
+	margin-top: 170px;
+	display: block;
+	color: #ffffff;
+	font-size: 30px;
+}
+
+/*=-=-=-==-=-=-ABOUT CSS=-=-=-=-*/
+
+.strict-about{
+	background: #f6f9f9;
+	padding: 80px 0;
+	text-align: center;
+}
+.strict-about h2{
+	color: #2d3950;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+.strict-about p{
+	color: #a0a0a0;
+	padding: 20px 10px;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+/*=-=-=-==-=-=-SERVICE CSS=-=-=-=-*/
+
+.strict-service{
+	padding: 60px 0;
+}
+.strict-ser-item{
+	text-align: center;
+}
+.strict-ser-item-icon{
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(to right,#48baff 50%,#5fc3ff 50%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.strict-ser-item-icon i{
+	font-size: 30px;
+	color: #ffffff;
+	transition: .5s;
+}
+.strict-ser-item-icon i:hover{
+	font-size: 50px;
+}
+.strict-ser-item-text{}
+.strict-ser-item-text h2{
+	padding: 20px 0;
+	text-transform: capitalize;
+	font-size: 20px;
+	color: #2d3950;
+}
+.strict-ser-item-text p{
+	color: #999999;
+	font-size: 15px;
+}
+
+/*=-=-=-==-=-=-PORTFOLIO CSS=-=-=-=-*/
+.strict-portfolio{
+	padding: 80px 0;
+	background: #f6f9f9;
+}
+
+.strict-portfolio-top{
+	text-align: center;
+}
+.strict-portfolio-top h2{
+	text-transform: capitalize;
+	font-size: 30px; 
+	color: #2d3950;
+}
+.strict-portfolio-top p{
+	color: #999999;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+.strict-portfolio-bottom{
+	padding: 50px 0 20px;
+}
+.strict-portfolio-item{
+    position: relative;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+.strict-portfolio-item img{}
+.strict-portfolio-item-overlay{
+   background: rgba(21,164,250,.9);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: .5s;
+}
+.overlay-icon-left{
+	background-color: #2cacf7;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	margin-right: 5px;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.overlay-icon-left a i{
+	color: #ffffff;
+}
+.overlay-icon-right{
+	color: #15a4fa;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	margin-left: 5px;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.overlay-icon-right a i{
+	color: #ffffff;
+}
+.strict-portfolio-item:hover .strict-portfolio-item-overlay{
+	opacity: 1;
+}
+
+/*=-=-=-==-=-=-CONTACT CSS=-=-=-=-*/
+
+.strict-contact{
+	background-image: url('images/con-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.strict-contact-overlay{
+	background: rgba(45, 57, 80, .9);
+	padding: 70px 0 100px;
+}
+.strict-contact-top{
+	text-align: center;
+}
+.strict-contact-top h2{
+	color: #ffffff;
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.strict-contact-top p{
+	color: #999999;
+	font-size: 15px;
+	text-transform: capitalize;
+}
+.strict-contact-bottom{
+	margin-top: 50px;
+}
+.strict-contact-form{}
+.form-group input{
+	height: 60px;
+	background: transparent;
+}
+.form-group textarea{
+	background: transparent;
+}
+.strict-con-form-bottom{}
+.strict-con-form-bottom-left{}
+.strict-con-form-bottom-left input{}
+.strict-con-form-bottom-left label{
+	color: #999999;
+}
+.strict-con-form-bottom-right{
+	text-align: right;
+}
+.strict-con-form-bottom-right input{
+	background: transparent;
+	padding: 12px 40px;
+	border: 1px solid #15a4fa;
+	color: #ffffff;
+	transition: .5s;
+}
+.strict-con-form-bottom-right input:hover{
+	background: #15a4fa;
+}
+
+/*=-=-=-==-=-=-FOOTER CSS=-=-=-=-*/
+.strict-footer{
+	padding: 20px 0;
+	background: #f6f9f9;
+}
+.strict-footer-left{}
+.strict-footer-left p{}
+.strict-footer-right{
+	float: right;
+
+}
+.strict-footer-right a i{
+	width: 35px;
+	height: 35px;
+	background: #15a4fa;
+	margin-right: 5px;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 8px;
+}
+
+/*=-=-=-==-=-=-SCROLL CSS=-=-=-=-*/
+.scrll{
+	width: 40px;
+	height: 40px;
+	background: #15a4fa;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	cursor: pointer;
+	opacity: 0; 
+	transition: .5s;
+}
+.scrll i{
+	color: #ffffff;
+}
